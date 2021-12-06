@@ -1,6 +1,6 @@
 // BoostPublish API Class
 const Postmate = require('postmate');
-const Helpers = require('../lib/helpers');
+const Helpers = require('../utils/helpers');
 const VERSION = '1.1.4';
 
 class BoostPublish {
@@ -24,7 +24,7 @@ class BoostPublish {
 		this.child = await new Postmate({
 			name: 'boostpow-publish',
 			container: document.body,
-			url: 'https://publish.boostpow.com', // 'http://localhost:4000',
+			url: 'https://publish.boost.pow.co', // 'http://localhost:4000',
 			classListArray: ['boostPublishFrame'],
 			model: { fromPowPublish: true }
 		});
